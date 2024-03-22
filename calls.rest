@@ -2,17 +2,17 @@
 GET http://localhost:3000/api/players
 
 ### Get single
-GET http://localhost:3000/api/players/2
+GET http://localhost:3000/api/players/1
 
 ### Create new 
 POST http://localhost:3000/api/players
 Content-type: application/json; charset=utf-8
 
 {
-  "firstName": "Victor",
-  "lastName": "Hedman",
+  "name": "Sidney Crosby",
+  "jersey": 87,
   "position": "Center",
-  "team": "tampa bay lightning"
+  "team": "Pittsburgh Penguins"
 }
 
 ### Update
@@ -20,8 +20,8 @@ PUT http://localhost:3000/api/players/1
 Content-type: application/json; charset=utf-8
 
 {
-  "firstName": "Alexander",
-  "lastName": "Ovechkin",
+  "name": "Alexander Ovechkin",
+  "jersey": 8,
   "position": "Forward",
   "team": "Washington Captials"
 }
