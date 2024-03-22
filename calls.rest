@@ -1,0 +1,27 @@
+### Get all
+GET http://localhost:3000/api/players
+
+### Get single
+GET http://localhost:3000/api/players/2
+
+### Create new 
+POST http://localhost:3000/api/players
+Content-type: application/json; charset=utf-8
+
+{
+  "firstName": "Victor",
+  "lastName": "Hedman",
+  "position": "Center",
+  "team": "tampa bay lightning"
+}
+
+### Update
+PUT http://localhost:3000/api/players/1
+Content-type: application/json; charset=utf-8
+
+{
+  "firstName": "Alexander",
+  "lastName": "Ovechkin",
+  "position": "Forward",
+  "team": "Washington Captials"
+}
